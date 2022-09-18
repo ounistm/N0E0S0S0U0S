@@ -8,6 +8,13 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Download vmware
+      run: Invoke-WebRequest https://download3.vmware.com/software/WKST-PLAYER-1624/VMware-player-full-16.2.4-20089737.exe -OutFile VMware.exe
+    - name: ls
+      run: ls
+   
+      
+      
     - name: Download ngrok
       run: FInvoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract ngrok
