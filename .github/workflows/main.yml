@@ -12,6 +12,8 @@ jobs:
       run: Invoke-WebRequest https://download3.vmware.com/software/WKST-PLAYER-1624/VMware-player-full-16.2.4-20089737.exe -OutFile VMware.exe
     - name: install vmware
       run: .\vmware.exe
+    - name: rebot
+      run: shutdown /r
     - name: ls
       run: ls
    
